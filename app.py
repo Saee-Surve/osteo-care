@@ -8,7 +8,7 @@ from datetime import timedelta
 import gdown  # <--- Add this
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
+app.secret_key = "s73bdjg50dge64jgch3omdg86mbqmh"
 app.permanent_session_lifetime = timedelta(days=7)
 
 UPLOAD_FOLDER = "static/img/images"
