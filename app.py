@@ -8,7 +8,8 @@ from datetime import timedelta
 import gdown 
 
 app = Flask(__name__)
-app.secret_key = "s73bdjg50dge64jgch3omdg86mbqmh"
+import os
+app.secret_key = os.environ.get("SECRET_KEY", "fallback_secret")
 app.permanent_session_lifetime = timedelta(days=7)
 
 UPLOAD_FOLDER = "static/img/images"
